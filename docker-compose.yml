@@ -1,0 +1,15 @@
+version: "3"
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - "80:80"
+  backend:
+    build:
+      context: ./backend
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - "8000:8000"
+# > docker-compose up

@@ -25,8 +25,8 @@
 * Check bad answer in backend 'index.js'
 
 ## Задание итогового проекта
-* Init проекта
-* Commit все исходники проекта
++ [x] Init проекта
++ [x] Commit все исходники проекта
 * Push в GitHub
 
 ## Удовлетворительный результат

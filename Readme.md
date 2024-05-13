@@ -3,18 +3,18 @@
 * Развернуть приложение при помощи Docker, что бы backend и frontend между собой общались
 
 ## Выполнение
-* Unpack 'Exercise.zip' in folder with project. Git init
+* Unpack 'Exercise.zip' in folder with project
+	* Git init
+* Working with frontend path of project (vue.js)
+	* Did ```npm create vue@latest``` with frontend’ name of project
+	* Copy all exercise frontend files without 'node_modules' folder
+	* ```npm i```
+	* ```npm run dev``` for testing frontend
+	* http://localhost:5173/
+	* git commit
 
-*- Copy Exercise from package file 'Exercise.zip' without folder 'frontend'
-*- frontend: vue.js
-	*- ```npm create vue@latest``` frontend
-	*- ```cd frontend```
-	*- ```npm i```
-	*- Replaces all files from the exercise folders 'frontend' without folder 'node_modules'
-	*- ```npm run dev``` for testing frontend
-	*- ```npm i```
-	*- ```npm run dev```
-	*- http://localhost:5173/
+
+	
 *- backend: port = 8000; GET POST
 	*- ```cd backend```
 	*- ```npm i express```

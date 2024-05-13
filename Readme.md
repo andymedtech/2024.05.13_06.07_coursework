@@ -10,16 +10,19 @@
 	* Copy all exercise frontend files without 'node_modules' folder
 	* ```npm i```
 	* ```npm run dev``` for testing frontend
-	* http://localhost:5173/
+	* ``` http://localhost:5173/```
 	* git commit
-
-
-	
-*- backend: port = 8000; GET POST
-	*- ```cd backend```
-	*- ```npm i express```
-	*- .gitignore
-	*- ```node index```
+* Working with backend path of project (port = 8000; GET POST)
+	* ```npm init -y```
+	* ```npm i express```
+	* Did file '.gitignore' for ignored 'node_modules' folder
+	* ```node index.js``` for testing backend
+	* git commit
+* Test local project
+	* Run frontend and backend
+	* ``` http://localhost:5173/```
+	* Test
+* Check bad answer in backend 'index.js'
 
 ## Задание итогового проекта
 * Init проекта

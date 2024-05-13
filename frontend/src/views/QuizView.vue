@@ -1,30 +1,29 @@
 <script setup>
-import PicturePicker from "@/components/PicturePicker.vue";
-import QuizForm from "@/components/QuizForm.vue";
+import PicturePicker from '@/components/PicturePicker.vue'
+import QuizForm from '@/components/QuizForm.vue'
 
-import {onMounted, ref} from "vue";
+import { onMounted, ref } from 'vue'
 
-const dwarfId = ref(null);
+const dwarfId = ref(null)
 async function fetchRandomDwarfId() {
   try {
     const response = await fetch('/api/quiz')
-    const data = await response.json();
-    dwarfId.value = data.id;
-  }
-  catch (error) {
+    const data = await response.json()
+    dwarfId.value = data.id
+  } catch (error) {
     console.log(error)
   }
 }
 
 onMounted(() => {
-  fetchRandomDwarfId();
+  fetchRandomDwarfId()
 })
 </script>
 
 <template>
   <main>
     <div class="wrapper">
-      <PicturePicker :dwarfId="dwarfId"/>
+      <PicturePicker :dwarfId="dwarfId" />
       <QuizForm :dwarfId="dwarfId" />
     </div>
   </main>
